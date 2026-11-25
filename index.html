@@ -13,18 +13,18 @@
   <meta property="og:title" content="EMPODERA ENFERMAGEM por Janainna Maia">
   <meta property="og:description" content="Uma voz pela valorização e transformação da enfermagem. Conhecimento, União e Protagonismo.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://empoderaenfermagem.com/">
-  <meta property="og:image" content="https://empoderaenfermagem.com/og-image.jpg">
+  <meta property="og:url" content="https://empoderaenfermagem.com.br/">
+  <meta property="og:image" content="canvas-asset:banner-enfermagem.png">
   <meta property="og:locale" content="pt_BR">
   
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="EMPODERA ENFERMAGEM por Janainna Maia">
   <meta name="twitter:description" content="Uma voz pela valorização e transformação da enfermagem.">
-  <meta name="twitter:image" content="https://empoderaenfermagem.com/og-image.jpg">
+  <meta name="twitter:image" content="canvas-asset:banner-enfermagem.png">
   
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="favicon-512x512.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="canvas-asset:favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="canvas-asset:favicon-512x512.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://d31zra5bs5df64.cloudfront.net/prod/3EtfrnNeymfrlqPeVkKKcKhMqJ9/chat/3MOWHs8eHepjRWArII2IPUNR6RJ/3Mc2OvlPqcvN7oFKOHwjQGXtTg2.png?Expires=1795639580&Key-Pair-Id=K2FT0I8VPJSP5H&Signature=QrRuvHYopHKcdjrx82j8kgOUAQYv83YdWTACcOQ~gjhBKG1xIaQiIOF~oO2xY-RZzSpzLYvBpGNiN3gGo7ThJJpzVPSYuQY~13ZMzPO7cvEjJSdMz3jQlFjA9RDwLVlbcFHJPK3OqZTVmqhZ7XZzZYeb4BF8fjF-gqGBmYePk1qQQB5nClrwf3-CmvJ0VvtwjSfhVMyIAVSGN9yBEEeVU-PgfvQoM5kAnfZWXgcKLlmrh9EUyBA26ns9fWXHm6SX4z9x4d0G4ZlKM1ByN8cr1iB7V9VXZ84ntU0rF4M3btuBlc5UZ92tyuiVyO~0qd8tX-bsFINUENzos7BpWJ0Ldw__">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -88,14 +88,6 @@
     .header-inner { display: flex; justify-content: space-between; align-items: center; height: 80px; }
     .logo { display: flex; align-items: center; text-decoration: none; }
     .logo img { height: 58px; width: auto; max-width: 260px; object-fit: contain; }
-    .logo-fallback {
-      display: none; align-items: center; gap: 0.75rem; font-weight: 800; color: var(--azul-saude);
-    }
-    .logo img[src=""] + .logo-fallback,
-    .logo img:not([src]) + .logo-fallback,
-    .logo img.error + .logo-fallback { display: flex; }
-    .logo img.error { display: none; }
-    
     nav { display: flex; align-items: center; }
     .nav-list { display: flex; list-style: none; gap: 1.75rem; }
     .nav-list a {
@@ -183,13 +175,12 @@
     .sobre-imagem {
       border-radius: 16px; min-height: 420px; display: flex; align-items: flex-end;
       padding: 0; color: var(--branco); position: relative; overflow: hidden;
-      box-shadow: 0 8px 24px var(--sombra); background: linear-gradient(135deg, var(--azul-saude), var(--verde-esperanca));
+      box-shadow: 0 8px 24px var(--sombra);
     }
     .sobre-imagem img {
       position: absolute; top: 0; left: 0; width: 100%; height: 100%;
       object-fit: cover; object-position: center top;
     }
-    .sobre-imagem img[src=""], .sobre-imagem img:not([src]) { display: none; }
     .sobre-imagem-conteudo {
       position: relative; z-index: 1; padding: 1.5rem;
       background: linear-gradient(transparent, rgba(11, 54, 91, 0.85));
@@ -235,15 +226,8 @@
       transition: transform 0.2s, box-shadow 0.2s;
     }
     .conteudo-card:hover, .conteudo-card:focus-within { transform: translateY(-4px); box-shadow: 0 8px 24px var(--sombra); }
-    .conteudo-thumb { height: 200px; overflow: hidden; background: linear-gradient(135deg, var(--azul-saude), var(--verde-esperanca)); position: relative; }
+    .conteudo-thumb { height: 200px; overflow: hidden; }
     .conteudo-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
-    .conteudo-thumb img[src=""], .conteudo-thumb img:not([src]) { display: none; }
-    .conteudo-thumb-fallback {
-      position: absolute; inset: 0; display: none; align-items: center; justify-content: center;
-      color: var(--branco); font-weight: 700; font-size: 1.1rem; text-align: center; padding: 1rem;
-    }
-    .conteudo-thumb img[src=""] + .conteudo-thumb-fallback,
-    .conteudo-thumb img:not([src]) + .conteudo-thumb-fallback { display: flex; }
     .conteudo-card:hover .conteudo-thumb img, .conteudo-card:focus-within .conteudo-thumb img { transform: scale(1.03); }
     .conteudo-info { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
     .tag {
@@ -389,11 +373,7 @@
   <header role="banner">
     <div class="container header-inner">
       <a href="#inicio" class="logo" aria-label="EMPODERA ENFERMAGEM por Janainna Maia - voltar ao início">
-        <img src="logo-empodera.png" alt="EMPODERA ENFERMAGEM por Janainna Maia" width="260" height="58" onerror="this.classList.add('error')">
-        <span class="logo-fallback">
-          <span style="font-size:1.25rem;">EMPODERA</span>
-          <span style="font-size:0.8rem; font-weight:500;">ENFERMAGEM</span>
-        </span>
+        <img src="canvas-asset:logo-branco-fundo-azul (1).png" alt="EMPODERA ENFERMAGEM por Janainna Maia" width="260" height="58">
       </a>
 
       <nav role="navigation" aria-label="Navegação principal">
@@ -442,7 +422,7 @@
 
         <div class="sobre-grid">
           <div class="sobre-imagem" role="img" aria-label="Janainna Maia, enfermeira e idealizadora do Empodera Enfermagem">
-            <img src="janainna-maia.jpg" alt="Janainna Maia, enfermeira e idealizadora do Empodera Enfermagem">
+            <img src="canvas-asset:janainna-maia.jpg" alt="Janainna Maia, enfermeira e idealizadora do Empodera Enfermagem">
             <div class="sobre-imagem-conteudo">
               <h3>Janainna Maia</h3>
               <p>Enfermeira e idealizadora</p>
@@ -530,8 +510,7 @@
         <div class="conteudos-grid">
           <article class="conteudo-card">
             <div class="conteudo-thumb">
-              <img src="capa-podcast.png" alt="Capa da seção Podcast do Empodera Enfermagem: Ouça. Reflita. Compartilhe." loading="lazy">
-              <div class="conteudo-thumb-fallback">PODCAST</div>
+              <img src="canvas-asset:capa-podcast.png" alt="Capa da seção Podcast do Empodera Enfermagem: Ouça. Reflita. Compartilhe." loading="lazy">
             </div>
             <div class="conteudo-info">
               <span class="tag podcast">Podcast</span>
@@ -543,8 +522,7 @@
 
           <article class="conteudo-card">
             <div class="conteudo-thumb">
-              <img src="capa-artigos.png" alt="Capa da seção Artigos do Empodera Enfermagem: Informação de qualidade para fortalecer a Enfermagem." loading="lazy">
-              <div class="conteudo-thumb-fallback">ARTIGOS</div>
+              <img src="canvas-asset:capa-artigos.png" alt="Capa da seção Artigos do Empodera Enfermagem: Informação de qualidade para fortalecer a Enfermagem." loading="lazy">
             </div>
             <div class="conteudo-info">
               <span class="tag artigos">Artigos</span>
@@ -556,8 +534,7 @@
 
           <article class="conteudo-card">
             <div class="conteudo-thumb">
-              <img src="capa-entrevista.png" alt="Capa da seção Entrevista do Empodera Enfermagem: Diálogo, experiências e construção coletiva." loading="lazy">
-              <div class="conteudo-thumb-fallback">ENTREVISTAS</div>
+              <img src="canvas-asset:capa-entrevista.png" alt="Capa da seção Entrevista do Empodera Enfermagem: Diálogo, experiências e construção coletiva." loading="lazy">
             </div>
             <div class="conteudo-info">
               <span class="tag entrevista">Entrevista</span>
@@ -863,7 +840,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="logo-empodera.png" alt="EMPODERA ENFERMAGEM por Janainna Maia" onerror="this.style.display='none'">
+          <img src="canvas-asset:logo-branco-fundo-azul (1).png" alt="EMPODERA ENFERMAGEM por Janainna Maia">
           <p>Movimento independente de comunicação, formação, articulação e mobilização da enfermagem brasileira.</p>
           <p style="font-size: 0.875rem; opacity: 0.8;">Conhecimento • União • Protagonismo</p>
         </div>
