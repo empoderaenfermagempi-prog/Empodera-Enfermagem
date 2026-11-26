@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><script src="https://myhub.ia.br/canvas-vendor/tailwind.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade | EMPODERA ENFERMAGEM por Janainna Maia</title>
+  <meta name="description" content="Política de Privacidade do EMPODERA ENFERMAGEM. Informações sobre tratamento de dados pessoais, direitos dos titulares e contato.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0B365B">
+  
+  <meta property="og:title" content="Política de Privacidade | EMPODERA ENFERMAGEM">
+  <meta property="og:description" content="Como o EMPODERA ENFERMAGEM trata dados pessoais.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.ico">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --azul-saude: #0B365B;
+      --azul-saude-claro: #154a7a;
+      --verde-esperanca: #009B77;
+      --verde-vida: #43AD35;
+      --amarelo-transformacao: #F4B400;
+      --turquesa-cuidado: #00AFC4;
+      --verde-bem-estar: #E8F5F2;
+      --branco: #FFFFFF;
+      --off-white: #F8FBFA;
+      --texto: #1A2E35;
+      --texto-claro: #4A6572;
+      --sombra: rgba(11, 54, 91, 0.12);
+      --sombra-forte: rgba(11, 54, 91, 0.18);
+      --borda: rgba(11, 54, 91, 0.12);
+      --foco: #F4B400;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; font-size: 16px; }
+    body {
+      font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--texto);
+      background-color: var(--branco);
+      line-height: 1.7;
+      font-weight: 400;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--azul-saude); text-decoration: underline; text-underline-offset: 3px; transition: color 0.2s ease, opacity 0.2s ease; }
+    a:hover, a:focus { color: var(--verde-esperanca); }
+    a:focus-visible, button:focus-visible { outline: 3px solid var(--foco); outline-offset: 3px; border-radius: 4px; }
+    .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 1.25rem; }
+    .skip-link {
+      position: absolute; top: -40px; left: 0; background: var(--azul-saude);
+      color: var(--branco); padding: 0.5rem 1rem; z-index: 10000;
+      transition: top 0.2s; font-weight: 600;
+    }
+    .skip-link:focus { top: 0; }
+
+    header {
+      background-color: var(--branco);
+      border-bottom: 1px solid var(--borda);
+      position: sticky; top: 0; z-index: 1000;
+      box-shadow: 0 2px 12px var(--sombra);
+    }
+    .header-inner { display: flex; justify-content: space-between; align-items: center; height: 80px; }
+    .logo { display: flex; align-items: center; text-decoration: none; }
+    .logo img { height: 58px; width: auto; max-width: 260px; object-fit: contain; }
+    .logo-fallback {
+      display: none; align-items: center; gap: 0.75rem; font-weight: 800; color: var(--azul-saude);
+    }
+    .logo img[src=""] + .logo-fallback,
+    .logo img:not([src]) + .logo-fallback,
+    .logo img.error + .logo-fallback { display: flex; }
+    .logo img.error { display: none; }
+    nav { display: flex; align-items: center; }
+    .nav-list { display: flex; list-style: none; gap: 1.75rem; }
+    .nav-list a {
+      color: var(--texto); text-decoration: none; font-weight: 600; font-size: 0.9rem;
+      padding: 0.25rem 0; border-bottom: 2px solid transparent;
+      transition: border-color 0.2s, color 0.2s;
+      text-transform: uppercase; letter-spacing: 0.02em;
+    }
+    .nav-list a:hover, .nav-list a:focus { color: var(--verde-esperanca); border-bottom-color: var(--amarelo-transformacao); }
+    .menu-toggle {
+      display: none; background: transparent; border: none; cursor: pointer;
+      padding: 0.5rem; color: var(--azul-saude); border-radius: 4px;
+    }
+    .menu-toggle svg { width: 28px; height: 28px; }
+
+    .page-header {
+      background: linear-gradient(135deg, var(--azul-saude) 0%, var(--verde-esperanca) 100%);
+      color: var(--branco); padding: 4rem 0 3rem; position: relative; overflow: hidden;
+    }
+    .page-header h1 {
+      font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 800;
+      line-height: 1.2; margin-bottom: 0.75rem; position: relative; z-index: 1;
+    }
+    .page-header p { font-size: 1.1rem; opacity: 0.95; position: relative; z-index: 1; }
+
+    main { padding: 4rem 0; }
+    .pagina-institucional {
+      max-width: 900px; margin: 0 auto; background-color: var(--branco);
+      padding: 2.5rem; border-radius: 16px; box-shadow: 0 4px 16px var(--sombra);
+    }
+    .pagina-institucional h2 { color: var(--azul-saude); margin: 2rem 0 1rem; font-size: 1.5rem; font-weight: 700; }
+    .pagina-institucional h3 { color: var(--verde-esperanca); margin: 1.5rem 0 0.75rem; font-size: 1.2rem; font-weight: 700; }
+    .pagina-institucional p { margin-bottom: 1rem; color: var(--texto); }
+    .pagina-institucional ul { margin: 0.5rem 0 1rem 1.5rem; color: var(--texto); }
+    .pagina-institucional li { margin-bottom: 0.5rem; }
+    .pagina-institucional a { color: var(--verde-esperanca); }
+    .pendente {
+      background-color: #FFF8E6; border-left: 4px solid var(--amarelo-transformacao);
+      padding: 1rem; border-radius: 0 8px 8px 0; margin: 1rem 0;
+    }
+    .pendente strong { color: var(--azul-saude); }
+
+    footer { background-color: var(--azul-saude); color: var(--branco); padding: 4rem 0 2rem; position: relative; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+    .footer-brand img { height: 60px; width: auto; margin-bottom: 1rem; }
+    .footer-brand p { font-size: 0.95rem; opacity: 0.9; margin-bottom: 1rem; }
+    .footer-col h4 {
+      font-size: 1rem; margin-bottom: 1.25rem; color: var(--amarelo-transformacao);
+      font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em;
+    }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 0.75rem; }
+    .footer-col a { color: var(--branco); text-decoration: none; opacity: 0.9; transition: opacity 0.2s; }
+    .footer-col a:hover, .footer-col a:focus { opacity: 1; text-decoration: underline; }
+    .rascunho {
+      background-color: rgba(244, 180, 0, 0.15); border-left: 3px solid var(--amarelo-transformacao);
+      padding: 1rem; border-radius: 0 8px 8px 0; margin-top: 1rem; font-size: 0.875rem;
+    }
+    .rascunho strong { color: var(--amarelo-transformacao); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.15); padding-top: 2rem;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 1rem; font-size: 0.875rem; opacity: 0.85;
+    }
+
+    @media (max-width: 992px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .menu-toggle { display: block; }
+      .nav-list {
+        position: absolute; top: 80px; left: 0; right: 0; background-color: var(--branco);
+        flex-direction: column; padding: 1.5rem; gap: 1rem;
+        border-bottom: 1px solid var(--borda); box-shadow: 0 8px 16px var(--sombra);
+        transform: translateY(-150%); opacity: 0; pointer-events: none;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+      }
+      .nav-list.active { transform: translateY(0); opacity: 1; pointer-events: auto; }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+      .logo img { height: 48px; max-width: 220px; }
+      .pagina-institucional { padding: 1.5rem; }
+      main { padding: 2.5rem 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+  <header role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="EMPODERA ENFERMAGEM por Janainna Maia - voltar ao início">
+        <img src="logo-empodera.png" alt="EMPODERA ENFERMAGEM por Janainna Maia" width="260" height="58" onerror="this.classList.add('error')">
+        <span class="logo-fallback">
+          <span style="font-size:1.25rem;">EMPODERA</span>
+          <span style="font-size:0.8rem; font-weight:500;">ENFERMAGEM</span>
+        </span>
+      </a>
+
+      <nav role="navigation" aria-label="Navegação principal">
+        <button class="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu de navegação">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+        <ul id="nav-menu" class="nav-list">
+          <li><a href="index.html#conhecimento">Conhecimento</a></li>
+          <li><a href="index.html#direitos">Direitos</a></li>
+          <li><a href="index.html#saude-trabalhador">Saúde do Trabalhador</a></li>
+          <li><a href="index.html#mobilizacao">Mobilização</a></li>
+          <li><a href="index.html#sus">SUS</a></li>
+          <li><a href="index.html#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo-principal">
+    <div class="page-header">
+      <div class="container">
+        <h1 id="privacidade-titulo">Política de Privacidade</h1>
+        <p>Última atualização: 25 de novembro de 2026.</p>
+      </div>
+    </div>
+
+    <section aria-labelledby="privacidade-titulo">
+      <div class="container">
+        <div class="pagina-institucional">
+          <p><strong>Responsável pelo Empodera Enfermagem e controladora dos dados pessoais:</strong> Janainna Maria Maia.</p>
+          <p><strong>CNPJ:</strong> não possui. O projeto é conduzido por pessoa física.</p>
+          <p><strong>Localização:</strong> Teresina, Piauí, Brasil.</p>
+          <p><strong>Canal de contato:</strong> <a href="mailto:empoderaenfermagem.pi@gmail.com">empoderaenfermagem.pi@gmail.com</a>.</p>
+          <p><strong>Encarregado(a) pelo tratamento de dados:</strong> não há encarregado(a) distinto. As solicitações devem ser encaminhadas diretamente à controladora.</p>
+
+          <h2>1. Sobre esta Política</h2>
+          <p>O Empodera Enfermagem respeita a privacidade e busca proteger os dados pessoais das pessoas que acessam seus canais, entram em contato, comentam conteúdos ou manifestam interesse em participar de suas atividades.</p>
+          <p>Esta Política aplica-se ao site do projeto e aos formulários, comentários, inscrições e demais canais digitais efetivamente utilizados. Os perfis oficiais são: Instagram, TikTok, YouTube e o e-mail <a href="mailto:empoderaenfermagem.pi@gmail.com">empoderaenfermagem.pi@gmail.com</a>.</p>
+
+          <h2>2. Quais dados podem ser tratados</h2>
+          <p>Dependendo do canal e da interação, podem incluir: nome, e-mail, telefone, cidade e estado; dados profissionais; informações de inscrição e participação; mensagens e comentários; dados técnicos de navegação, se coletados pela hospedagem ou ferramentas utilizadas.</p>
+          <p><strong>Dados sensíveis não serão solicitados rotineiramente.</strong> Não envie senhas, dados bancários completos, documentos pessoais ou informações de saúde por canais não indicados para essa finalidade.</p>
+
+          <h2>3. Finalidades</h2>
+          <p>Responder mensagens e solicitações; organizar inscrições, participações, eventos e ações; enviar informações relacionadas a atividades solicitadas; publicar e moderar comentários; administrar e proteger o site; emitir certificados ou registrar participação; avaliar e aprimorar conteúdos; cumprir obrigações legais; prevenir fraudes e abusos.</p>
+
+          <h2>4. Bases legais</h2>
+          <p>O tratamento será realizado conforme a LGPD, podendo se apoiar em consentimento, cumprimento de obrigação legal, execução de contrato, exercício regular de direitos, legítimo interesse ou outras hipóteses previstas na legislação.</p>
+
+          <h2>5. Comentários</h2>
+          <p>Os comentários são lidos antes da publicação. Não publique dados pessoais, dados de saúde, documentos, acusações sem fundamento ou conteúdo discriminatório. O projeto poderá ocultar ou remover comentários incompatíveis com as regras de convivência.</p>
+
+          <h2>6. Compartilhamento</h2>
+          <p>Os dados poderão ser compartilhados, de forma limitada, com prestadores que apoiem a operação do site, hospedagem, formulários, comunicação, videoconferência ou armazenamento; com instituições parceiras, quando necessário para uma atividade informada; e com autoridades públicas, quando exigido por lei.</p>
+
+          <div class="pendente">
+            <strong>Pendente de verificação:</strong> identificação completa dos prestadores e plataformas utilizados, com suas finalidades.
+          </div>
+
+          <h2>7. Transferência internacional</h2>
+          <p>Alguns serviços digitais podem armazenar ou processar dados fora do Brasil. Quando houver transferência internacional, serão observados os mecanismos previstos na legislação aplicável.</p>
+
+          <div class="pendente">
+            <strong>Pendente de verificação:</strong> países ou prestadores envolvidos na transferência internacional de dados.
+          </div>
+
+          <h2>8. Cookies e tecnologias semelhantes</h2>
+          <p>O site pode utilizar cookies essenciais para funcionamento e segurança. Ferramentas de análise ou rastreamento só serão instaladas após verificação e, quando aplicável, com o devido aviso.</p>
+
+          <div class="pendente">
+            <strong>Pendente de verificação:</strong> listagem completa de cookies e ferramentas de análise utilizados, incluindo finalidade, duração e prestador.
+          </div>
+
+          <h2>9. Prazo de conservação</h2>
+          <p>Os dados serão mantidos pelo tempo necessário para cumprir as finalidades informadas, atender obrigações legais, resguardar direitos ou manter registros necessários. Quando deixarem de ser necessários, serão eliminados ou anonimizados.</p>
+
+          <div class="pendente">
+            <strong>Pendente de verificação:</strong> critérios ou prazos específicos de conservação por tipo de dado.
+          </div>
+
+          <h2>10. Segurança</h2>
+          <p>O Empodera Enfermagem busca adotar medidas técnicas e administrativas compatíveis com os riscos do tratamento. Nenhum canal digital é completamente livre de riscos.</p>
+
+          <h2>11. Direitos das pessoas titulares</h2>
+          <p>Você pode solicitar confirmação de tratamento, acesso, correção, anonimização, bloqueio, eliminação, informação sobre compartilhamento, revogação de consentimento, oposição e portabilidade, quando aplicável. Envie o pedido para <a href="mailto:empoderaenfermagem.pi@gmail.com">empoderaenfermagem.pi@gmail.com</a>.</p>
+
+          <h2>12. Crianças e adolescentes</h2>
+          <p>O Empodera Enfermagem não direciona suas atividades a crianças, salvo quando expressamente informado. Se houver envio indevido de dados de criança ou adolescente, entre em contato pelo canal indicado.</p>
+
+          <h2>13. Links de terceiros</h2>
+          <p>Os canais podem conter links para sites ou serviços de terceiros. Esta Política não abrange as práticas desses terceiros.</p>
+
+          <h2>14. Alterações</h2>
+          <p>Esta Política poderá ser atualizada. A versão vigente ficará disponível no site com a data de atualização.</p>
+
+          <h2>15. Contato</h2>
+          <p>Controladora: Janainna Maria Maia. Localização: Teresina, Piauí, Brasil. E-mail: <a href="mailto:empoderaenfermagem.pi@gmail.com">empoderaenfermagem.pi@gmail.com</a>. Não há encarregado(a) distinto designado; as solicitações devem ser encaminhadas diretamente à controladora.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="logo-empodera.png" alt="EMPODERA ENFERMAGEM por Janainna Maia" onerror="this.style.display='none'">
+          <p>Movimento independente de comunicação, formação, articulação e mobilização da enfermagem brasileira.</p>
+          <p style="font-size: 0.875rem; opacity: 0.8;">Conhecimento • União • Protagonismo</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html#inicio">Início</a></li>
+            <li><a href="index.html#sobre">Sobre</a></li>
+            <li><a href="index.html#conhecimento">Conhecimento</a></li>
+            <li><a href="index.html#direitos">Direitos</a></li>
+            <li><a href="index.html#saude-trabalhador">Saúde do Trabalhador</a></li>
+            <li><a href="index.html#mobilizacao">Mobilização</a></li>
+            <li><a href="index.html#sus">SUS</a></li>
+            <li><a href="index.html#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Redes sociais</h4>
+          <ul>
+            <li><a href="https://instagram.com/empodera_enfermagem" aria-label="Instagram do EMPODERA ENFERMAGEM" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://tiktok.com/@empoderaenfermagem" aria-label="TikTok do EMPODERA ENFERMAGEM" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+            <li><a href="https://youtube.com/@empoderaenfermagem" aria-label="YouTube do EMPODERA ENFERMAGEM" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Informações</h4>
+          <ul>
+            <li><a href="privacidade.html" aria-current="page">Política de Privacidade</a></li>
+            <li><a href="acessibilidade.html">Acessibilidade</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rascunho">
+        <strong>Atenção:</strong> este site está em construção. A Política de Privacidade e a Declaração de Acessibilidade foram preenchidas com os dados disponíveis e indicam, de forma transparente, os pontos que ainda precisam de verificação técnica ou jurídica.
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 EMPODERA ENFERMAGEM por Janainna Maia. Todos os direitos reservados.</p>
+        <p>Responsável: Janainna Maria Maia | Teresina, Piauí, Brasil.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('.nav-list');
+    const navLinks = document.querySelectorAll('.nav-list a');
+
+    menuToggle.addEventListener('click', () => {
+      const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', !isExpanded);
+      navList.classList.toggle('active');
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        menuToggle.setAttribute('aria-expanded', 'false');
+        navList.classList.remove('active');
+      });
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navList.classList.contains('active')) {
+        menuToggle.setAttribute('aria-expanded', 'false');
+        navList.classList.remove('active');
+        menuToggle.focus();
+      }
+    });
+  </script>
+</body>
+</html>
